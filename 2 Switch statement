@@ -1,0 +1,34 @@
+import java.util.*;
+class Demo {
+  public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+      System.out.println("1.unary operator ");
+System.out.println("2.binary operator ");
+System.out.println("3.ternary operator ");
+
+    int a= sc.nextInt();
+    switch (a) {
+
+      case 1:
+System.out.println("unary operator ");
+
+        break;
+
+      case 2:
+System.out.println("binary operator ");
+
+        break;
+      case 3:
+System.out.println("ternary operator ");
+
+        break;
+      
+      default:
+System.out.println(" enter valid no ");
+
+        break;
+
+    }
+    
+  }
+}

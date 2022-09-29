@@ -1,0 +1,25 @@
+import java.util.*;
+public class OddEvenSum {
+public static void main(String[] args) {
+	Scanner sc =new Scanner(System.in);
+	System.out.println("enter the starting no:");
+	int add=0;
+	int sum=0;
+	int a=sc.nextInt();
+	System.out.println("enter the ending no :");
+	int b=sc.nextInt();
+	for(int i=a;i<=b;i++) {
+		if(i%2==0) {
+			add=add+i;
+			System.out.println("\t\t\t\t\tthis is even no :"+i);
+			}
+		else
+		{
+			sum=sum+i;
+			System.out.println("this is odd no :\t"+i+"\n");	
+		}
+		}
+	System.out.println("\t\t\t\t\tthe addition of even no is "+add);
+	System.out.println("the addition of odd no is :\t"+sum);
+}
+}

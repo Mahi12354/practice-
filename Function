@@ -1,0 +1,53 @@
+import java.util.*;
+public class Functionex {
+static Scanner sc =new Scanner(System.in);
+ static int a=sc.nextInt();
+ static boolean f=false;
+	
+static void prime(int a) {
+	for(int i=2;i<=a/2;i++) {
+		if(a%i==0) {
+			f=true;
+			break;
+		}
+	}
+	if(!f) {
+		System.out.println(a+" "+" is the prime no ");
+	}
+	else
+	{
+			System.out.println(a+" "+" is not the prime no ");
+			System.exit(a);
+	
+	}
+	}
+static void EvenOdd(int a) {
+	System.out.println("check the given no is Odd or Even :");
+	if(a%2==0) {
+		System.out.println(a+" "+"is the even no ");
+		if(a%10==0) {
+			System.out.println("the no is divisible by 10");
+		}
+		else
+		{
+			System.out.println("the no is not divisible by 10 ");
+		}
+	}
+	else
+	{
+		System.out.println(a+" "+"  is the odd no ");
+		if(a%3==0) {
+			System.out.println("the no is divisible b 3");
+		}
+		else
+		{
+			System.out.println("the no is not divisible by 3");
+		}
+	}
+}
+public static void main(String[] args) {
+	Functionex fe = new Functionex();
+	fe.prime(a);
+	fe.EvenOdd(a);
+}
+}
